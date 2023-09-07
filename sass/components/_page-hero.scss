@@ -1,0 +1,93 @@
+.hero {
+    text-align: center;
+}
+
+.backgroundhero {
+    max-width: 1600px;
+    max-height: 400px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    padding-top: 118px;
+    padding-bottom: 118px;
+    
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: #2F303A;  
+
+    background-image: 
+    linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
+    url(/images/herobg/bg-mobile.jpg);
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    .backgroundhero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
+    url(/images/herobg/bg-mobile@2x.jpg) ;
+    }
+  }
+
+@media screen and (min-width: 768px){
+    .backgroundhero{                
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
+    url(/images/herobg//bg-tablet.jpg) ;                              
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .backgroundhero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
+    url(/images/herobg/bg-tablet@2x.jpg) ;
+        }
+    }   
+}
+
+
+@media screen and (min-width: 1200px) {
+    .backgroundhero {          
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
+    url(/images/herobg/bg.jpg) ;
+    max-height: 600px;              
+    padding-top: 200px;
+    padding-bottom: 200px;    
+    }
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+        .backgroundhero {
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
+        url(/images/herobg/bg@2x.jpg) ;
+        }
+    }
+}   
+
+.hero-title {
+    color: $white-text-color;
+    text-align: center;
+    font-weight: 900;
+    line-height: 1.37;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    margin-top: 0px;
+    margin-bottom: 0;
+
+    @media screen and (max-width: 1559px) {
+    font-size: 26px;
+    line-height: 1.615; 
+    }
+
+    @media screen and (min-width: 1600px) {
+    font-size: 44px;
+    letter-spacing: 2.64px;
+    line-height: 1.363;
+    }
+}
+
+    

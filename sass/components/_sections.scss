@@ -1,0 +1,47 @@
+.section-title {
+    color: $title-text-color;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+
+    margin-top: 0;
+    margin-bottom: 0;
+
+    @media screen and (max-width:480px) {
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 0.84px;
+    }
+    
+}
+.section {
+    background-color: $white-text-color;
+
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    &.no-padding {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    @media screen and (min-width: 1600px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    }
+}
+
+.section-team {
+    background-color: $bcg-button-color;
+    font-size: 16px;
+    line-height: 1.19;
+
+    padding-top: 94px;
+    padding-bottom: 94px;
+    
+    @media screen and (max-width:480px) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+}
