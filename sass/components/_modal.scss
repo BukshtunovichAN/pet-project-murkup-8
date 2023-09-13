@@ -180,6 +180,10 @@
     letter-spacing: 0.12px;
 
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover, &:focus {
+    border: 1px solid $acent-color;
+    }
     }
 
     .textarea-hover {
@@ -210,8 +214,8 @@
     // box-sizing: border-box;
     margin-right: 8px;
 
-    width: 16px;
-    height: 15px;
+    width: 18px;
+    height: 17px;
     border-radius: 3px;
     border: 2px solid $title-text-color;
         
@@ -223,7 +227,7 @@
 
     position: absolute;
     left: 40px;
-    bottom: 122px;
+    bottom: 116px;
     width: 16px;
     height: 15px;
 
@@ -240,8 +244,8 @@
     input:checked + .icon-checked {
     // box-sizing: border-box;
     border: 2px solid $acent-color;
-    width: 16px;
-    height: 15px;
+    width: 18px;
+    height: 17px;
 
     background-color: $acent-color;
     /* background-image: url(../images/icon-check.svg); */

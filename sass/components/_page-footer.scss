@@ -153,9 +153,11 @@
     letter-spacing: 0.42px;
     text-transform: uppercase;
     text-align: center;
-
+    
+    @media screen and (min-width: 768px){
     margin-top: 60px;
-
+    } 
+    
     @media screen and (min-width: 1200px){
     width: 100%;
     text-align: left;
@@ -175,6 +177,7 @@
     }
 
     input {
+    box-sizing: border-box;
     font-family: inherit;
     font-size: 16px;
     
@@ -190,6 +193,20 @@
     border: 1px solid rgba(255, 255, 255, 0.30);
     background-color: rgba(33, 150, 243, 0.00);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    color: $white-text-color;
+    transition: border-color 250ms $timing-function;
+
+    &:hover{
+    border-color: $white-text-color;
+    }
+
+    &::placeholder{
+        font-size: 16px;
+        line-height: 1.250;
+        letter-spacing: 0.03em;
+        color: rgba(255, 255, 255, 0.6);
+    }
+
     @media screen and (min-width: 1200px){
     width: 358px;
     text-align: left;
@@ -197,6 +214,7 @@
     margin-left: 0;
     }
     }
+
     @media screen and (max-width: 1199px){
         max-width: 450px;
     }

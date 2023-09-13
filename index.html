@@ -171,17 +171,16 @@
               
               <div class="checkbox">
                 <input type="checkbox" name="agreement" id="checkbox"/>
-                    <span class="icon-checked">
-                      <svg width="16px" height="15px">
-                        <use href="./images/sprite.svg#icon-checked">
-                        </use>
-                    </svg>
-                    </span>
-                    
-                    <label for="checkbox">Соглашаюсь с рассылкой и принимаю&nbsp;
-                    <span><a href="" class="polyces">Условия договора</a></span>
-                  </label>
-              </div>
+                <span class="icon-checked">
+                  <svg width="16px" height="15px">
+                    <use href="./images/sprite.svg#icon-checked">
+                    </use>
+                </svg>
+                </span>
+                <label for="checkbox">Соглашаюсь с рассылкой и принимаю&nbsp;
+                <span><a href="" class="polyces">Условия договора</a></span>
+              </label>
+          </div>
       
               <div class="button-submit">
                   <button class="btn button" type="submit">Отправить</button>
@@ -246,15 +245,38 @@
           <h2 class="section-title">Чем мы занимаемся</h2>
           <ul class="work-list list">
             <li class="work-item">
-              <img src="./images/desctope.jpg" alt="Десктопные приложения" width="370">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="./images/gallery/box_1.webp 1x, ./images/gallery/box_1@2x.webp 2x" 
+                type="image/webp">
+
+                <source media="(min-width: 1200px)" srcset="./images/gallery/box_1.jpeg 1x, ./images/gallery/box_1@2x.jpeg 2x"> 
+                    
+                <img src="./images/gallery/box_1.jpg" alt="Десктопные приложения">
+            </picture>
+
               <h3 class="title work">Десктопные приложения</h3>
             </li>
             <li class="work-item">
-              <img src="./images/mobile.jpg" alt="Мобильные приложения" width="370">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="./images/gallery/box_2.webp 1x, ./images/gallery/box_2@2x.webp 2x" 
+                type="image/webp">
+
+                <source media="(min-width: 1200px)" srcset="./images/gallery/box_2.jpeg 1x, ./images/gallery/box_2@2x.jpeg 2x"> 
+
+                <img src="./images/gallery/box_2.jpg" alt="Мобильные приложения">
+            </picture> 
               <h3 class="title work">Мобильные приложения</h3>
             </li>
             <li class="work-item">
-              <img src="./images/disign.jpg" alt="Дизайнерские решения" width="370">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="./images/gallery/box_3.webp 1x, ./images/gallery/box_3@2x.webp 2x" 
+                type="image/webp">
+
+                <source media="(min-width: 1200px)" srcset="./images/gallery/box_3.jpeg 1x, ./images/gallery/box_3@2x.jpeg 2x"> 
+
+                <img src="./images/gallery/box_3.jpg" alt="Дизайнерские решения">
+            </picture>
+
               <h3 class="title work">Дизайнерские решения</h3>
             </li>
           </ul>

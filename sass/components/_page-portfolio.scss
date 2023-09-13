@@ -15,6 +15,11 @@
     li:nth-last-child(-n + 1) {
     margin-right: 0;
     } 
+    @media screen and (min-width: 768px) {
+    display: flex ;
+    flex-wrap: nowrap;
+    justify-content: center;
+    }
 }
 
 .section-portfolio {
